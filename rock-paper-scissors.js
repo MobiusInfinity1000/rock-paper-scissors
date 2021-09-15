@@ -19,13 +19,13 @@ function resetGame(){
     if (computerScore > playerScore) {
         modalComment.textContent = "You lost 😟! Play again?"
     } else if(computerScore < playerScore){
-        modalComment.textContent = "Congratulations! You won 😎 Do you want to try your luck again?"
+        modalComment.textContent = "Congratulations! You won 😎!! Play again?"
     } else {
         modalComment.textContent = "You have breached the space-time continuum to arrive at neither a win nor a loss. Try again?"
     };
     playerScore = 0;
     computerScore = 0;
-    humanScore.textContent = "Human Score: " + playerScore;
+    humanScore.textContent = "Player Score: " + playerScore;
     pcScore.textContent = "Computer Score: " + computerScore;
     gameComment.textContent = "";
     modal.style.display = "none";
@@ -79,44 +79,44 @@ function getWinner() {
     //let playerSelection = getHumanSelection();
 
     if (computerSelection == playerSelection) {
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "Tie! Both picked " + computerSelection;
         return "It's a tie! You both picked " + computerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
     } else if (computerSelection == "ROCK" && playerSelection == "PAPER") {
         playerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You win! " + playerSelection + " beats " + computerSelection + "!";
         return "You win! " + playerSelection + " beats " + computerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
     } else if (computerSelection == "ROCK" && playerSelection == "SCISSORS") {
         computerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You lose! " + computerSelection + " beats " + playerSelection + "!";
         return "You lose! " + computerSelection + " beats " + playerSelection+ ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
         
     } else if (computerSelection == "PAPER" && playerSelection == "ROCK") {
         computerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You lose! " + computerSelection + " beats " + playerSelection + "!";
         return "You lose! " + computerSelection + " beats " + playerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
     } else if (computerSelection == "PAPER" && playerSelection == "SCISSORS") {
         playerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You win! " + playerSelection + " beats " + computerSelection + "!";
         return "You win! " + playerSelection + " beats " + computerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
     } else if (computerSelection == "SCISSORS" && playerSelection == "ROCK") {
         playerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You win! " + playerSelection + " beats " + computerSelection + "!"; 
         return "You win! " + playerSelection + " beats " + computerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
     } else if (computerSelection == "SCISSORS" && playerSelection == "PAPER") {
         computerScore++;
-        humanScore.textContent = "Human Score: " + playerScore;
+        humanScore.textContent = "Player Score: " + playerScore;
         pcScore.textContent = "Computer Score: " + computerScore;
         gameComment.textContent = "You lose! " + computerSelection + " beats " + playerSelection + "!";
         return "You lose! " + computerSelection + " beats " + playerSelection + ". Your score: " + playerScore + ". Computer Score: " + computerScore; 
