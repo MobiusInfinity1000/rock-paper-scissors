@@ -7,28 +7,44 @@
     <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-    <!-- TITLE DIV -->
-    <div id = "titleDiv">
-      <h1>ROCK, PAPER, SCISSORS</h1>
+    <div class = "box">
+      <!-- TITLE DIV -->
+      <div id = "titleDiv">
+        <h1>ROCK, PAPER, SCISSORS</h1>
+      </div>
+
+      <!-- SCORES -->
+      <div id = "scoreDiv">
+        <h2 id = "humanScore">Human Score: 0</h2>
+        <h2 id = "computerScore">Computer Score: 0</h2><br>
+        <h2 id = "gameComment"></h2>
+      </div>
+      <!-- BUTTONS -->
+      <div id = "buttonDiv">
+        <div id = "Rock" class = "rps"><button class="fa fa-hand-grab-o"></button></div>
+        <div id = "Paper" class = "rps"><button class="fa fa-hand-paper-o"></button></div>
+        <div id = "Scissors" class = "rps"><button class="fa fa-hand-scissors-o"></button></div>
+      </div>
+
+
+      <!-- FOOTER -->
+      <div id = "footer">
+        <h6>Created by Mobius Infinity</h6>
+      </div>
     </div>
 
-    <!-- SCORES -->
-    <div id = "scoreDiv">
-      <h2 id = "humanScore">Human Score: 0</h2>
-      <h2 id = "computerScore">Computer Score: 0</h2>
-    </div>
-    <!-- BUTTONS -->
-    <div id = "buttonDiv">
-      <div id = "Rock" class = "rps"><button class="fa fa-hand-grab-o"></button></div>
-      <div id = "Paper" class = "rps"><button class="fa fa-hand-paper-o"></button></div>
-      <div id = "Scissors" class = "rps"><button class="fa fa-hand-scissors-o"></button></div>
-    </div>
 
+    <!-- The Modal -->
+<div id="myModal" class="modal">
 
-    <!-- FOOTER -->
-    <div id = "footer">
-      <h6>Created by Mobius Infinity</h6>
-    </div>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <!-- <span class="close">&times;</span> -->
+    <p id = "modalContent">Do you want to play again?</p>
+    <button id = "retry">Retry</button>
+  </div>
+
+</div>
   </body>
   <script src="rock-paper-scissors.js"></script>
 

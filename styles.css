@@ -6,22 +6,31 @@ div{
     font-family: Futura, Arial, Helvetica;
 }
 body{
+    height:100%;
     /* background-color: #66FCF1; */
     background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
+  
 #titleDiv{
-    display: block;
     padding:5%;
     text-align: center;
     align-self: center;
     background-color: #1F2833;
     border-color: #45A29E;
-    margin: 2%;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-weight:bolder;
     font-size: 450%;
     color: #66FCF1;
@@ -30,9 +39,10 @@ h1{
     overflow: hidden;
     display: block;
     gap: 10%;
-    padding:1%;
+    /* padding:1%; */
     height:100%;
-    margin: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     color: #66FCF1;
     font-size: 200%;
     text-align: center;
@@ -52,15 +62,26 @@ h1{
     margin:3%;
     color: #EE91C1;
 }
+
+#gameComment{
+    height:1em;
+    display: block;
+    margin-top: 8%;
+    font-size: 100%;
+}
 #buttonDiv{
-    padding:8%;
+    padding:3%;
+    padding-top: 0%;
     height:100%;
-    margin: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 1700%;
     text-align: center;
     border-color: #45A29E;
     background-color: #1F2833;
     display: flex;
+    flex: 0 1 auto;
+    flex-flow: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10%;
@@ -76,6 +97,8 @@ h1{
     float: left;
 }
 button{
+    background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
+    background-attachment: fixed;
     cursor: pointer;
     border: 0.01em;
     border-style: solid;
@@ -83,16 +106,18 @@ button{
     padding: 2%;
     border-width: 1%;
     border-radius: 10%;
-    background: none;
+    /* background: none; */
     box-shadow: none;
     color: #66FCF1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     margin-top: 15%;
-    box-shadow: 3px 10px #EE91C1;
+    box-shadow: 0 10px #EE91C1;
 }
 
-button:hover{
-    background-color: #224b49;
-}
+/* button:hover{
+    color: black;
+} */
 
 button:active{
     background-color: #224b49;
@@ -102,17 +127,107 @@ button:active{
 
 
 #footer{
-    padding: 0.01em;
-    padding-left:7%;
-    padding-right:7%;
-    margin: 2%;
+    flex: 0 1 10px;
     text-align: center;
     border-color: #45A29E;
-    background-color: #1F2833;
+    /* background-color: #1F2833; */
 }
 h6{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom right,#66FCF1, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: Futura;
     font-size: 100%;
-    color: #EE91C1;
     flex: 1 1;
 }
+
+@media only screen and (max-device-width: 460px) {
+    #titleDiv{
+        margin-top: 2%;
+    }
+    #buttonDiv{
+        flex-flow: column;
+    }
+    button{
+        padding:0;
+        margin:0;
+    }
+    h6{
+        font-size:200%;
+    }
+  }
+
+  @media only screen and (max-device-width: 300px) {
+    #titleDiv{
+        margin-top: 2%;
+    }
+    #buttonDiv{
+        flex-flow: column;
+        font-size: 2100%;
+    }
+    button{
+        padding:0;
+        margin:0;
+    }
+    h6{
+        font-size:200%;
+    }
+  }
+
+
+
+
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #1F2833; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #1F2833;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    font-size: 300%;
+    border: 1px solid #EE91C1;
+    width: 70%; /* Could be more or less, depending on screen size */
+    align-content: center;
+  }
+  #modalContent{
+      color: white;
+      font-family: Futura;
+      text-align: center;
+      padding-bottom: 0;
+  }
+
+  #retry{
+      font-family: Futura, Arial;
+      font-size:50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
