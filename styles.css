@@ -97,8 +97,8 @@ h1{
     float: left;
 }
 button{
-    background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
-    background-attachment: fixed;
+    /* background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
+    background-attachment: fixed; */
     cursor: pointer;
     border: 0.01em;
     border-style: solid;
@@ -109,8 +109,9 @@ button{
     /* background: none; */
     box-shadow: none;
     color: #66FCF1;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-color: #1F2833;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
     margin-top: 15%;
     box-shadow: 0 10px #EE91C1;
 }
