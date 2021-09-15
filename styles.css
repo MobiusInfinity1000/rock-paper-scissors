@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Futura;
+    src: url(Futura.ttc);
+}
+div{
+    font-family: Futura, Arial, Helvetica;
+}
+body{
+    /* background-color: #66FCF1; */
+    background-image: linear-gradient(to bottom right,#66FCF1, #EE91C1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+#titleDiv{
+    display: block;
+    padding:5%;
+    text-align: center;
+    align-self: center;
+    background-color: #1F2833;
+    border-color: #45A29E;
+    margin: 2%;
+}
+h1{
+    font-weight:bolder;
+    font-size: 450%;
+    color: #66FCF1;
+}
+#scoreDiv{
+    overflow: hidden;
+    display: block;
+    gap: 10%;
+    padding:1%;
+    height:100%;
+    margin: 2%;
+    color: #66FCF1;
+    font-size: 200%;
+    text-align: center;
+    align-items: center;
+    border-color: #45A29E;
+    background-color: #1F2833;
+    justify-content: center;
+
+}
+#humanScore{
+    float: left;
+    margin:3%;
+}
+
+#computerScore{
+    float:right;
+    margin:3%;
+    color: #EE91C1;
+}
+#buttonDiv{
+    padding:8%;
+    height:100%;
+    margin: 2%;
+    font-size: 1700%;
+    text-align: center;
+    border-color: #45A29E;
+    background-color: #1F2833;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+
+}
+
+#contentDiv > .rps{
+    flex: 1;
+    justify-content: center;
+}
+
+.rps{
+    float: left;
+}
+button{
+    cursor: pointer;
+    border: 0.01em;
+    border-style: solid;
+    border-color: #66FCF1;
+    padding: 2%;
+    border-width: 1%;
+    border-radius: 10%;
+    background: none;
+    box-shadow: none;
+    color: #66FCF1;
+    margin-top: 15%;
+    box-shadow: 3px 10px #EE91C1;
+}
+
+button:hover{
+    background-color: #224b49;
+}
+
+button:active{
+    background-color: #224b49;
+    box-shadow: none;
+    transform: translateY(9px);
+}
+
+
+#footer{
+    padding: 0.01em;
+    padding-left:7%;
+    padding-right:7%;
+    margin: 2%;
+    text-align: center;
+    border-color: #45A29E;
+    background-color: #1F2833;
+}
+h6{
+    font-family: Futura;
+    font-size: 100%;
+    color: #EE91C1;
+    flex: 1 1;
+}
